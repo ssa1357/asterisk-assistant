@@ -8,7 +8,7 @@ import time
 
 # Init
 tts_file = '/tmp/asterisk_tts'
-volume_boost = 3.5
+volume_boost = 3
 agi = AGI()
 
 # TTS
