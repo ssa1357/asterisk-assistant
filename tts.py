@@ -12,7 +12,7 @@ volume_boost = 3.5
 agi = AGI()
 
 # TTS
-tts = gTTS(sys.argv[1])
+tts = gTTS(sys.argv[1],lang='en', tld='us')
 tts.save(f"{tts_file}.mp3")
 agi.verbose(f"Save as {tts_file}.mp3")
 sound = AudioSegment.from_mp3(f"{tts_file}.mp3")
